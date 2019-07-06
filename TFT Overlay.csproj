@@ -213,6 +213,7 @@
     <Resource Include="Images\force_of_nature.png" />
     <Resource Include="Images\frozen_heart.png" />
     <Resource Include="Images\frozen_mallet.png" />
+    <Resource Include="Images\tftlogo.png" />
     <Resource Include="Images\guardian_angel.png" />
     <Resource Include="Images\guinsoos_rageblade.png" />
     <Resource Include="Images\hextech_gunblade.png" />
