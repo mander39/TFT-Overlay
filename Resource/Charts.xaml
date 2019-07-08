@@ -7,7 +7,7 @@
         <WrapPanel>
             <Grid>
                 <Grid.Background>
-                    <SolidColorBrush Color="Black" Opacity="{Binding ElementName=OpacitySlider,Path=Value}"></SolidColorBrush>
+                    <SolidColorBrush Color="Black" Opacity=".9"></SolidColorBrush>
                 </Grid.Background>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="70.5"/>
