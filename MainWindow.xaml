@@ -8,7 +8,7 @@
         mc:Ignorable="d"
         DataContext="{StaticResource Locator}"
         ResizeMode="CanResizeWithGrip"
-        Title="MainWindow" AllowsTransparency="True" WindowStyle="None" Background="Transparent" Topmost="True" Height="930" Width="1064">
+        Title="MainWindow" AllowsTransparency="True" WindowStyle="None" Background="Transparent" Topmost="True" Height="787" Width="900">
     <ContentControl>
         <ContentControl.ContentTemplate>
             <DataTemplate>
@@ -27,21 +27,21 @@
                                 <ColumnDefinition Width="475"/>
                             </Grid.ColumnDefinitions>
                             <Grid.RowDefinitions>
-                                <RowDefinition Height="60"/>
+                                <RowDefinition Height="70"/>
                                 <RowDefinition Height="835"/>
                             </Grid.RowDefinitions>
                             <ResizeGrip  Grid.Column="0" Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Top" Visibility="{Binding IsChecked, ElementName=ResizeLock, Converter={StaticResource BooleanToVisibilityConverter}}" Style="{DynamicResource VisibleResizeGrip}"/>
                            
                             
                             <!--Start of Tabs-->
-                            <local:TabControlRadio Background="Transparent" BorderThickness="0" x:Name="RadioTabs">
+                            <local:TabControlRadio Background="Transparent" BorderThickness="0" Padding="30 10 10 10" x:Name="RadioTabs">
                                 <!-- Main Tab -->
                                     <WrapPanel>
                                         <local:OptionalRadioButton x:Name="BFS"  GroupName="Toggle" Width="Auto" Height="Auto" Grid.Column="1" Background="Transparent" BorderBrush="Transparent" IsChecked="{Binding ElementName=RadioTabs, Path=RadioGroup, Converter={StaticResource RadioConverter}, ConverterParameter=Items}">
                                             <local:OptionalRadioButton.Content>
                                                 <Border Width="Auto" Height="Auto" Padding="2.5 0 0 0" Margin="0 0 0 0" BorderBrush="Transparent" CornerRadius="0 0 0 0" BorderThickness="0" Background="Transparent">
                                                     <Border BorderBrush="Transparent" Background="Transparent">
-                                                        <Image Source="Images\Cstyle\BFPM.png" Height="44" Width="44"/>
+                                                        <Image Source="Images\Cstyle\BF.png" Height="44" Width="44"/>
                                                     </Border>
                                                 </Border>
                                             </local:OptionalRadioButton.Content>
@@ -50,7 +50,7 @@
                                             <local:OptionalRadioButton.Content>
                                                 <Border Width="Auto" Height="Auto" Padding="0 0 0 0" Margin="0 0 0 0" BorderBrush="Transparent" CornerRadius="0 0 0 0" BorderThickness="0" Background="Transparent">
                                                     <Border>
-                                                        <Image Source="Images\Cstyle\BowPM.png" Height="44" Width="44"/>
+                                                        <Image Source="Images\Cstyle\Bow.png" Height="44" Width="44"/>
                                                     </Border>
                                                 </Border>
                                             </local:OptionalRadioButton.Content>
@@ -59,7 +59,7 @@
                                             <local:OptionalRadioButton.Content>
                                                 <Border Width="Auto" Height="Auto" Padding="0 0 0 0" Margin="0 0 0 0" BorderBrush="Transparent" CornerRadius="20 20 20 20" BorderThickness="0" Background="Transparent">
                                                     <Border>
-                                                        <Image Source="Images\Cstyle\RodPM.png" Height="44" Width="44"/>
+                                                        <Image Source="Images\Cstyle\Rod.png" Height="44" Width="44"/>
                                                     </Border>
                                                 </Border>
                                             </local:OptionalRadioButton.Content>
@@ -68,7 +68,7 @@
                                             <local:OptionalRadioButton.Content>
                                                 <Border Width="Auto" Height="Auto" Padding="0 0 0 0" Margin="0 0 0 0" BorderBrush="Transparent" CornerRadius="20 20 20 20" BorderThickness="0" Background="Transparent">
                                                     <Border>
-                                                        <Image Source="Images\Cstyle\TearPM.png" Height="44" Width="44"/>
+                                                        <Image Source="Images\Cstyle\Tear.png" Height="44" Width="44"/>
                                                     </Border>
                                                 </Border>
                                             </local:OptionalRadioButton.Content>
@@ -77,7 +77,7 @@
                                             <local:OptionalRadioButton.Content>
                                                 <Border Width="Auto" Height="Auto" Padding="0 0 0 0" Margin="0 0 0 0" BorderBrush="Transparent" CornerRadius="20 20 20 20" BorderThickness="0" Background="Transparent">
                                                     <Border>
-                                                        <Image Source="Images\Cstyle\VestPM.png" Height="44" Width="44"/>
+                                                        <Image Source="Images\Cstyle\Vest.png" Height="44" Width="44"/>
                                                     </Border>
                                                 </Border>
                                             </local:OptionalRadioButton.Content>
@@ -86,7 +86,7 @@
                                             <local:OptionalRadioButton.Content>
                                                 <Border Width="Auto" Height="Auto" Padding="0 0 0 0" Margin="0 0 0 0" BorderBrush="Transparent" CornerRadius="20 20 20 20" BorderThickness="0" Background="Transparent">
                                                     <Border>
-                                                        <Image Source="Images\Cstyle\CapePM.png" Height="44" Width="44"/>
+                                                        <Image Source="Images\Cstyle\Cape.png" Height="44" Width="44"/>
                                                     </Border>
                                                 </Border>
                                             </local:OptionalRadioButton.Content>
@@ -95,7 +95,7 @@
                                             <local:OptionalRadioButton.Content>
                                                 <Border Width="Auto" Height="Auto" Padding="0 0 0 0" Margin="0 0 0 0" BorderBrush="Transparent" CornerRadius="20 20 20 20" BorderThickness="0" Background="Transparent">
                                                     <Border>
-                                                        <Image Source="Images\Cstyle\BeltPM.png" Height="44" Width="44"/>
+                                                        <Image Source="Images\Cstyle\Belt.png" Height="44" Width="44"/>
                                                     </Border>
                                                 </Border>
                                             </local:OptionalRadioButton.Content>
@@ -104,7 +104,7 @@
                                             <local:OptionalRadioButton.Content>
                                                 <Border Width="Auto" Height="Auto" Padding="0 0 0 0" Margin="0 0 0 0" BorderBrush="Transparent" CornerRadius="20 20 20 20" BorderThickness="0" Background="Transparent">
                                                     <Border>
-                                                        <Image Source="Images\Cstyle\SpatulaPM.png" Height="44" Width="44"/>
+                                                        <Image Source="Images\Cstyle\Spatula.png" Height="44" Width="44"/>
                                                     </Border>
                                                 </Border>
                                             </local:OptionalRadioButton.Content>
@@ -138,7 +138,7 @@
                                 <!--Info Chart section-->
                                 
                             </local:TabControlRadio>
-                            <Rectangle Width="20" Height="20" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="0" Margin="0 0">
+                            <Rectangle Width="30" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="0" Margin="0 0">
                                 <Rectangle.Fill>
                                     <ImageBrush ImageSource="Images/tftlogo.png"></ImageBrush>
                                 </Rectangle.Fill>
